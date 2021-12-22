@@ -1,0 +1,32 @@
+article{
+    color:red;
+    animation:color 2s infinite alternate;
+}
+a{
+    color:currentColor;
+    border:1px solid currentColor;
+    text-decoration: none;
+}
+a::after{
+    content:"";
+    display:inline-block;
+    width:1em;
+    height:1em;
+    background: currentColor;
+
+}
+
+@keyframes color{
+    25%{
+        color:green;    
+    }
+    50%{
+        color:yellow;
+    }
+    75%{
+        color:yellowgreen;
+    }
+    100%{
+        color:tomato;
+    }
+}
