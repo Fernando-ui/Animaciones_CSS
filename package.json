@@ -1,0 +1,24 @@
+{
+  "name": "Animaciones-CSS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "node-sass 01-introduccion/main.scss 01-introduccion/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fernando-ui/Animaciones_CSS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fernando-ui/Animaciones_CSS/issues"
+  },
+  "homepage": "https://github.com/Fernando-ui/Animaciones_CSS#readme",
+  "dependencies": {
+    "node-sass": "^7.0.0"
+  }
+}
