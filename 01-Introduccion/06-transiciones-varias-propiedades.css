@@ -1,0 +1,40 @@
+body{
+    font-size:2em;
+    display:flex;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+a{
+    background-color:red;
+    color:white;
+    text-decoration:none;
+    display:in  line-block;
+    left:0;
+    margin:auto;
+    position:relative;
+    padding:.5em 1em;
+    transition: background-color .5s .2s,
+                color .5s .2s,
+                transform .2s,
+                left .5s .4s;
+                
+
+}
+    a:hover{
+        /* background-color:black;
+        color:yellow;
+        transform:translateY(-10%); */
+    }
+p{
+    margin:auto;
+}
+p:hover a {
+    background-color:black;
+    color:yellow;
+    transform:translateY(-100%);
+    left:-1000%;
+}
+
+
+  
+  
