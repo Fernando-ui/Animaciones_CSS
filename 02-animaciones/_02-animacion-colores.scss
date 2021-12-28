@@ -1,0 +1,24 @@
+body{
+    animation-name:change-background, change-color;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    background:red;
+    color:#fff;
+    display:flex;
+    min-height:100vh;
+}
+
+h1{
+    margin:auto;
+     color:inherit;
+} 
+@keyframes change-background {
+    100%{
+        background:yellow;
+    }
+}
+@keyframes change-color{
+    100%{
+        color:#000;
+    }
+}  
