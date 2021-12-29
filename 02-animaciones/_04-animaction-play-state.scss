@@ -1,0 +1,48 @@
+
+body{
+    display:grid;
+    justify-content: center;
+    align-items:center;
+    min-height:100vh;
+}
+.heart{
+    --size:200px;
+    background:hsl(0,90,50);
+    width:var(--size);
+    height: var(--size);
+    position:relative;
+
+    animation-duration:.5s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-in;
+    
+    transform:rotate(-45deg);
+    animation:beat .8s infinite ease-in alternate;
+    transform:rotate(-45deg);
+    animation-play-state:paused;
+   
+    &::before,
+    &::after{ 
+        content:""; 
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:inherit;
+        border-radius: 50%;
+        top:-50%;  
+    }
+    &::after{
+        top:0;
+        right:-50%;
+    }
+    &:hover{ 
+        animation-play-state:running;
+    }
+
+} 
+@keyframes beat{
+    to{
+        transform:rotate(-45deg) scale(1.2);
+        background:hsl(0,100,50)
+    }
+}
