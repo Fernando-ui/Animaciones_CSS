@@ -1,24 +1,25 @@
-body{
-    animation-name:change-background, change-color;
-    animation-duration:5s;
-    animation-iteration-count: infinite;
-    background:red;
-    color:#fff;
-    display:flex;
-    min-height:100vh;
-}
+// body{
+//     animation-name:change-background, change-color;
+//     animation-duration:10s;
+//     animation-iteration-count: .3;
+//     animation-fill-mode:forwards;
+//     background:red;
+//     color:#fff;
+//     display:flex;
+//     min-height:100vh;
+// }
 
-h1{
-    margin:auto;
-     color:inherit;
-} 
-@keyframes change-background {
-    100%{
-        background:yellow;
-    }
-}
-@keyframes change-color{
-    100%{
-        color:#000;
-    }
-}  
+// h1{ 
+//     margin:auto;
+//      color:inherit;
+// } 
+// @keyframes change-background {
+//     100%{
+//         background:yellow;
+//     }
+// }
+// @keyframes change-color{
+//     100%{
+//         color:#000;
+//     }
+// }        

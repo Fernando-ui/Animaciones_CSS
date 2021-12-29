@@ -1,35 +1,35 @@
-.ball {
-  width: 200px;
-  height: 200px;
-  background: red;
-  border-radius: 50%;
-  animation-name: change-color;
-  animation-duration: 2s;
-  border: 2px solid #000; }
-
-@keyframes change-color {
-  50% {
-    background: lime; }
-  100% {
-    background: yellow; } }
-
-body {
-  animation-name: change-background, change-color;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  background: red;
+.button {
+  display: table;
+  padding: 1em 2em;
+  background: #eb6347;
   color: #fff;
+  margin: 1em auto;
+  cursor: pointer;
+  font-family: sans-serif; }
+
+.ball {
+  font-family: sans-serif;
+  background: #222;
   display: flex;
-  min-height: 100vh; }
-
-h1 {
-  margin: auto;
-  color: inherit; }
-
-@keyframes change-background {
-  100% {
-    background: yellow; } }
-
-@keyframes change-color {
-  100% {
-    color: #000; } }
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 10px;
+  margin: 1em 0;
+  transform: translateX(0) rotate(0);
+  transition: transform 2s; }
+  .animate .ball {
+    transform: translateX(calc(100vw - 100%)) rotate(2turn); }
+  .ball.ease {
+    transition-timing-function: ease; }
+  .ball.ease-in {
+    transition-timing-function: ease-in; }
+  .ball.ease-out {
+    transition-timing-function: ease-out; }
+  .ball.ease-in-out {
+    transition-timing-function: ease-in-out; }
+  .ball.linear {
+    transition-timing-function: linear; }

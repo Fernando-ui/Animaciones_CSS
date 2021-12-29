@@ -1,17 +1,17 @@
-.ball{
-    width:200px;
-    height:200px;
-    background:red;
-    border-radius: 50%;
-    animation-name:change-color;
-    animation-duration:2s;
-    border:2px solid #000;
-} 
-@keyframes change-color{
-    50%{
-        background:lime;
-    }
-    100%{
-        background:yellow;
-    }
-}   
+// .ball{
+//     width:200px;
+//     height:200px;
+//     background:red;
+//     border-radius: 50%;
+//     animation-name:change-color;
+//     animation-duration:2s;
+//     border:2px solid #000;
+// } 
+// @keyframes change-color{
+//     50%{
+//         background:lime;
+//     }
+//     100%{
+//         background:yellow;
+//     }
+// }   
