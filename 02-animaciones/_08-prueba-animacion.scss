@@ -1,0 +1,34 @@
+.pelota{
+    width:100px;
+    height:100px;
+    background: linear-gradient(to top,#21936E, #9198e5);
+    border-radius: 50%;
+    position:relative;
+    animation:mover 3s ease  alternate;
+    margin-bottom: 150px;
+    transition:transform .4s;
+    +.pelota2{
+        width:150px;
+        height:150px;
+        background:linear-gradient(to bottom, green, yellow);
+        border-radius: 50%;
+        transform: translateX(0);
+        transition:transform .4s;
+    }
+    &.animacionFer{
+        transform:rotate(0.5turn);
+        transform:scale(1.5) translateX(100px);
+    }
+}    
+.pelota:hover + .pelota2{
+    transform:scale(1.5) translateX(100px);
+    background:linear-gradient(to bottom, magenta , orangered);
+
+}   
+
+
+@keyframes mover{
+    to{
+        transform: translateX(100px);
+    }
+}       
