@@ -4,10 +4,10 @@
     background: linear-gradient(to top,#21936E, #9198e5);
     border-radius: 50%;
     position:relative;
-    animation:mover 3s ease  alternate;
-    margin-bottom: 150px;
+    animation:mover 1s ease   alternate ;
+    margin-bottom: 150px; 
     transition:transform .4s;
-    +.pelota2{
+    + .pelota2{
         width:150px;
         height:150px;
         background:linear-gradient(to bottom, green, yellow);
@@ -28,6 +28,9 @@
 
 
 @keyframes mover{
+    from{
+        transform:translateX(0);
+    }
     to{
         transform: translateX(100px);
     }
