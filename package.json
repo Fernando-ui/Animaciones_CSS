@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:sass": "node-sass 01-introduccion/main.scss 01-introduccion/style.css -w",
-    "watch:sass:animaciones": "node-sass 02-animaciones/main.scss 02-animaciones/style.css -w"
+    "watch:sass:animaciones": "node-sass 02-animaciones/main.scss 02-animaciones/style.css -w",
+    "watch:sass:animacionesll": "node-sass 03-animacionesll/main.scss 03-animacionesll/style.css -w"
+
   },
   "repository": {
     "type": "git",
