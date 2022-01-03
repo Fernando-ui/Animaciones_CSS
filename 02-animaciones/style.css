@@ -1,47 +1,29 @@
-:root {
-  --animation-time:2s; }
+.pelota {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to top, #21936E, #9198e5);
+  border-radius: 50%;
+  position: relative;
+  animation: mover 1s ease   alternate;
+  margin-bottom: 150px;
+  transition: transform .4s; }
+  .pelota + .pelota2 {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to bottom, green, yellow);
+    border-radius: 50%;
+    transform: translateX(0);
+    transition: transform .4s; }
+  .pelota.animacionFer {
+    transform: rotate(0.5turn);
+    transform: scale(1.5) translateX(100px); }
 
-body {
-  display: grid;
-  min-height: 100vh;
-  grid-template-columns: 25% 75%;
-  grid-template-rows: 80px 1fr 80px;
-  overflow: hidden; }
+.pelota:hover + .pelota2 {
+  transform: scale(1.5) translateX(100px);
+  background: linear-gradient(to bottom, magenta, orangered); }
 
-header, footer {
-  grid-column: span 2;
-  background: #00CBFF; }
-
-nav {
-  background: #FBA905; }
-
-main {
-  padding-left: 1em; }
-
-header {
-  animation: header var(--animation-time); }
-
-@keyframes header {
+@keyframes mover {
   from {
-    transform: translateY(-100%); } }
-
-nav {
-  animation: nav var(--animation-time); }
-
-@keyframes nav {
-  from {
-    transform: translate(-100%); } }
-
-main {
-  animation: main var(--animation-time); }
-
-@keyframes main {
-  from {
-    transform: translate(100%); } }
-
-footer {
-  animation: footer var(--animation-time); }
-
-@keyframes footer {
-  from {
-    transform: translateY(100%); } }
+    transform: translateX(0); }
+  to {
+    transform: translateX(100px); } }
