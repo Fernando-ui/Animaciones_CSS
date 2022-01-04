@@ -1,18 +1,16 @@
-body {
-  display: flex;
-  min-height: 100vh;
-  overflow: hidden;
-  flex-direction: column;
-  justify-content: center; }
+.box {
+  background: url("./assets/megaman.png");
+  width: 140px;
+  height: 170px;
+  transition: background-position 0.5s steps(4); }
+  .box:hover {
+    background-position: -660px 0; }
 
-#ball {
-  width: 100px;
-  height: 100px;
-  background: red;
-  margin: 1em auto;
-  border-radius: 50%;
-  animation: rebotar 1s cubic-bezier(0.35, -0.52, 0.45, 1.47) forwards; }
-
-@keyframes rebotar {
-  to {
-    transform: translateY(300px); } }
+.box2 {
+  background: url("./assets/megaman.png");
+  width: 140px;
+  height: 170px;
+  background-position: 6px 860px;
+  transition: background-position 0.2s steps(4); }
+  .box2:hover {
+    background-position: -700px 860px; }

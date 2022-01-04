@@ -1,21 +1,21 @@
-body{
-    display:flex;
-    min-height: 100vh;
-    overflow:hidden;
-    flex-direction:column;
-    justify-content: center;
-}
+// body{
+//     display:flex;
+//     min-height: 100vh;
+//     overflow:hidden;
+//     flex-direction:column;
+//     justify-content: center;
+// }
 
-#ball{
-    width:100px;
-    height:100px;
-    background:red;
-    margin:1em auto;
-    border-radius: 50%;
-    animation: rebotar 1s cubic-bezier(.35,-0.52,.45,1.47) forwards;
-    @keyframes rebotar{
-        to{
-            transform:translateY(300px);
-        }
-    }
-}      
+// #ball{
+//     width:100px;
+//     height:100px;
+//     background:red;
+//     margin:1em auto;
+//     border-radius: 50%;
+//     animation: rebotar 1s cubic-bezier(.35,-0.52,.45,1.47) forwards;
+//     @keyframes rebotar{
+//         to{
+//             transform:translateY(300px);
+//         }
+//     }
+// }      

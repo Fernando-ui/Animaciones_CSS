@@ -1,0 +1,20 @@
+
+.box{
+    background:url('./assets/megaman.png');
+    width:140px; 
+    height:170px;
+    transition:background-position .5s steps(4);
+    &:hover{
+        background-position:-660px 0;  
+    }
+}          
+.box2{
+    background:url('./assets/megaman.png'); 
+    width:140px;
+    height:170px; 
+    background-position:6px 860px; 
+    transition:background-position .2s steps(4);
+    &:hover{
+        background-position:-700px 860px;
+        } 
+}             
