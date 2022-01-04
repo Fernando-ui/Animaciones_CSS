@@ -1,30 +1,30 @@
-html{
-    font-family: sans-serif;
-}
+// html{
+//     font-family: sans-serif;
+// }
 
-main{
-    max-width:600px;
-    margin-left:auto;
-    margin-right: auto;
-    padding:0 1em;
-}
-h1{
-    text-align:center;
-    margin-top:1.5em;
-}
-img{
-    display:block;
-    margin:2em auto;
-    opacity:0;
-    transform:scale(0);
-    &.animate{
-        animation: appear .5s forwards;
-    }
+// main{
+//     max-width:600px;
+//     margin-left:auto;
+//     margin-right: auto;
+//     padding:0 1em;
+// }
+// h1{
+//     text-align:center;
+//     margin-top:1.5em;
+// }
+// img{
+//     display:block;
+//     margin:2em auto;
+//     opacity:0;
+//     transform:scale(0);
+//     &.animate{
+//         animation: appear .5s forwards;
+//     }
     
-    @keyframes appear{
-        to{
-            opacity:1;
-            transform:scale(1);
-        }
-    }  
-}    
+//     @keyframes appear{
+//         to{
+//             opacity:1;
+//             transform:scale(1);
+//         }
+//     }  
+// }    
