@@ -7,6 +7,7 @@
     &:hover{
         background-position:-660px 0;  
     }
+    
 }          
 .box2{
     background:url('./assets/megaman.png'); 
@@ -15,6 +16,11 @@
     background-position:6px 860px; 
     transition:background-position .2s steps(4);
     &:hover{
-        background-position:-700px 860px;
-        } 
-}             
+        animation:mover .5s steps( 3 ) infinite;
+    } 
+    @keyframes mover{
+        to{
+            background-position:-600px 860px;
+        }
+    }
+}              
