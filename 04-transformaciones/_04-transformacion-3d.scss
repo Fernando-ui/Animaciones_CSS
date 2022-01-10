@@ -1,55 +1,55 @@
-@mixin grid($color) {
-    border :  2px solid $color;
-    background : linear-gradient(transparent 24px, $color 24px, $color 25px),
-                linear-gradient(90deg, transparent 24px, $color 24px, $color 25px);
-    background-size: 25px;
-  }
+// @mixin grid($color) {
+//     border :  2px solid $color;
+//     background : linear-gradient(transparent 24px, $color 24px, $color 25px),
+//                 linear-gradient(90deg, transparent 24px, $color 24px, $color 25px);
+//     background-size: 25px;
+//   }
   
-  body {
-    background: #222;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    min-height: 100vh;
-    perspective: 1000px;
-  }
+//   body {
+//     background: #222;
+//     display: grid;
+//     justify-content: center;
+//     align-content: center;
+//     min-height: 100vh;
+//     perspective: 1000px;
+//   }
   
-  .coords {
-    transform-style: preserve-3d;
-    transform: rotate3d(1, 1, 1, 0deg);
-    position: relative;
-    width: 300px;
-    height: 300px;
-    animation: rotation3d 2s infinite linear;  
-  }
+//   .coords {
+//     transform-style: preserve-3d;
+//     transform: rotate3d(1, 1, 1, 0deg);
+//     position: relative;
+//     width: 300px;
+//     height: 300px;
+//     animation: rotation3d 2s infinite linear;  
+//   }
   
-  @keyframes rotation3d {
-    to {
-      transform: rotate3d(1,1,1,-1turn);
-    } 
-  }
+//   @keyframes rotation3d {
+//     to {
+//       transform: rotate3d(1,1,1,-1turn);
+//     } 
+//   }
   
-  .axis {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
+//   .axis {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//   }
   
-  $x: 1;
-  $y: 1;
-  $z: 1;
+//   $x: 1;
+//   $y: 1;
+//   $z: 1;
   
-  .x {
-    @include grid(hsl(300,100,50));
-    transform: rotateX(90deg);
-  }
+//   .x {
+//     @include grid(hsl(300,100,50));
+//     transform: rotateX(90deg);
+//   }
   
   
-  .y {
-    @include grid(hsl(60,100,50));
-  }
+//   .y {
+//     @include grid(hsl(60,100,50));
+//   }
   
-  .z {
-    @include grid(hsl(180,100,50));
-    transform: rotateY(90deg);
-  }
+//   .z {
+//     @include grid(hsl(180,100,50));
+//     transform: rotateY(90deg);
+//   }

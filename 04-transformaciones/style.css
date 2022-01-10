@@ -1,41 +1,54 @@
+html {
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
 body {
-  background: #222;
   display: grid;
+  min-height: 100vh;
+  background: #222;
   justify-content: center;
   align-content: center;
-  min-height: 100vh;
-  perspective: 1000px; }
+  perspective: 4000px; }
 
-.coords {
-  transform-style: preserve-3d;
-  transform: rotate3d(1, 1, 1, 0deg);
-  position: relative;
+.cube {
   width: 300px;
   height: 300px;
-  animation: rotation3d 2s infinite linear; }
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(90deg); }
 
-@keyframes rotation3d {
+@keyframes rotation {
   to {
-    transform: rotate3d(1, 1, 1, -1turn); } }
+    transform: rotate(1turn); } }
 
-.axis {
+.face {
   position: absolute;
   width: 100%;
   height: 100%; }
 
-.x {
-  border: 2px solid magenta;
-  background: linear-gradient(transparent 24px, magenta 24px, magenta 25px), linear-gradient(90deg, transparent 24px, magenta 24px, magenta 25px);
-  background-size: 25px;
-  transform: rotateX(90deg); }
+.right {
+  transform: translateX(150px) translateZ(150px) rotateY(90deg);
+  background: purple; }
 
-.y {
-  border: 2px solid yellow;
-  background: linear-gradient(transparent 24px, yellow 24px, yellow 25px), linear-gradient(90deg, transparent 24px, yellow 24px, yellow 25px);
-  background-size: 25px; }
+.left {
+  transform: translateX(-150px) translateZ(150px) rotateY(270deg);
+  background: red; }
 
-.z {
-  border: 2px solid cyan;
-  background: linear-gradient(transparent 24px, cyan 24px, cyan 25px), linear-gradient(90deg, transparent 24px, cyan 24px, cyan 25px);
-  background-size: 25px;
-  transform: rotateY(90deg); }
+.back {
+  background: brown; }
+
+.bottom {
+  transform: translateZ(-150px) rotateX(90deg) translateY(-150px);
+  opacity: 0;
+  background: violet; }
+
+.top {
+  background: green;
+  transform: translateZ(150px) translateY(-150px) rotateX(90deg); }
+
+.front {
+  text-align: center;
+  background: yellow;
+  transform: translateZ(300px); }
