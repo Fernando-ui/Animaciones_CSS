@@ -1,0 +1,12 @@
+@mixin fadeIn(){
+    animation:fadein $time;
+    @keyframes fadein{
+        from{
+            opacity:0;
+        }
+
+        to{
+            opacity:1;
+        }
+    }
+}
